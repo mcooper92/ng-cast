@@ -12,7 +12,14 @@ angular.module('video-player')
       this.list = param.data.items;
       this.video = param.data.items[0];
     };
-    this.api.youtubeAPI('cat', this.response);
+    this.titleClick = (index) => {
+      this.video = this.list[index];
+    };
+    this.api.youtubeAPI('cats', this.response);
     console.log(this.list);
+  
+    this.search = (query) => {
+      this.api.youtubeAPI(query, this.response);
+    };
   }
 });
