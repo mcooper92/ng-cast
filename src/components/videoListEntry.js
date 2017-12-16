@@ -5,8 +5,10 @@ angular.module('video-player')
     vid: '<',
     titleClick: '<',
     index: '<'
+  },
+  controller: function() {
+    
   }
 }
-
 
 );

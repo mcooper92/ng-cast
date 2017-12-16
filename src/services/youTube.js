@@ -7,12 +7,13 @@ angular.module('video-player')
       params: {
         key: window.YOUTUBE_API_KEY, 
         q: query,
-        max: '5',
+        max: '10',
         part: 'snippet'
       },
       type: 'object'
     }).then(function successCallback(response) {
       callback(response);
+      
     }, function errorCallback(response) {
         // called asynchronously if an error occurs
         // or server returns response with an error status.

@@ -15,9 +15,7 @@ angular.module('video-player')
     this.titleClick = (index) => {
       this.video = this.list[index];
     };
-    this.api.youtubeAPI('cats', this.response);
-    console.log(this.list);
-  
+    this.api.youtubeAPI('cats', this.response);  
     this.search = (query) => {
       this.api.youtubeAPI(query, this.response);
     };
