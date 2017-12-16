@@ -4,8 +4,8 @@ angular.module('video-player')
   templateUrl: 'src/templates/app.html',
   
   controller: function(youTube) {
-    this.list = window.exampleVideoData;
-    this.video = window.exampleVideoData[0];
+    this.list = null;
+    this.video = null;
     this.api = youTube;
     this.holder = null;
     this.response = (param) => {

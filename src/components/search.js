@@ -6,7 +6,7 @@ angular.module('video-player')
     searchClick: '<'
   },
    
-  controller: function(){
+  controller: function() {
     this.input = '';
   }
 });
